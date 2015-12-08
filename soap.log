@@ -1,0 +1,232 @@
+run:
+Method #1: readPersonList()
+Parameters: None.
+Description: Reads all the people in our database and save their number
+ 
+There are 12 people in our database
+Save Ids of first and last person
+------List of people in our database------
+1 Person No:1 Firstname:Pavel Lastname:Pallino Birthdate:Tue Dec 08 00:48:23 EAT 2015
+Healthprofile: Height:22.0 Weight:22.0 Bloodpressure:null
+
+2 Person No:28 Firstname:Pavel Lastname:Pallino Birthdate:Mon Dec 07 18:18:12 EAT 2015
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:22.0
+
+3 Person No:32 Firstname:Salim Lastname:Saleh Birthdate:2000-01-01
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:12
+
+4 Person No:36 Firstname:Salim Lastname:Saleh Birthdate:2000-01-01
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:12
+
+5 Person No:40 Firstname:Salim Lastname:Saleh Birthdate:2000-01-01
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:12
+
+6 Person No:60 Firstname:Benhur Lastname:Ivo Birthdate:2819-01-01
+Healthprofile: Height:12.0 Weight:12.0 Bloodpressure:null
+
+7 Person No:63 Firstname:Chic Lastname:pretty Birthdate:2000-01-01
+Healthprofile: Height:null Weight:null Bloodpressure:12
+
+8 Person No:66 Firstname:ivo Lastname:ivan Birthdate:2000-01-01
+Healthprofile: Height:12 Weight:12 Bloodpressure:12
+
+9 Person No:69 Firstname:Mercy Lastname:Lovely Birthdate:2000-01-01
+Healthprofile: Height:60 Weight:60 Bloodpressure:12
+
+10 Person No:165 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:null Weight:null Bloodpressure:null
+
+11 Person No:167 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:null Weight:null Bloodpressure:null
+
+12 Person No:169 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:null Weight:null Bloodpressure:null
+
+
+************************************************************
+
+Method #2: readPerson(Long id)
+Parameters: id of person
+Description: Prints first person
+
+------First person------
+Person No:1 Firstname:Pavel Lastname:Pallino Birthdate:Tue Dec 08 00:48:23 EAT 2015
+Healthprofile: Height:22.0 Weight:22.0 Bloodpressure:null
+
+
+************************************************************
+
+Method #3: updatePerson(Person p)
+Parameters: Person object with parameters to update eg first or last name
+Description: Updates the first person's name to 'Maurizio'
+Person No:1 Firstname:Pavel Lastname:Pallino Birthdate:Tue Dec 08 00:48:23 EAT 2015
+Healthprofile: Height:22.0 Weight:22.0 Bloodpressure:null
+
+
+************************************************************
+
+Method #4: createPerson(Person p)
+Parameters: New person object with first and last name, birthdate and healthprofile
+Description: Creates a person with name 'Yoweri' 'Museveni' saves the id of new person and counts the people
+
+------Person created------
+Person No:201 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:98 Weight:98 Bloodpressure:null
+
+
+************************************************************
+
+************* New people count is 13 after insertion *************
+------New List of people in our database------
+1 Person No:1 Firstname:Pavel Lastname:Pallino Birthdate:Tue Dec 08 00:48:23 EAT 2015
+Healthprofile: Height:22.0 Weight:22.0 Bloodpressure:null
+
+2 Person No:28 Firstname:Pavel Lastname:Pallino Birthdate:Mon Dec 07 18:18:12 EAT 2015
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:22.0
+
+3 Person No:32 Firstname:Salim Lastname:Saleh Birthdate:2000-01-01
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:12
+
+4 Person No:36 Firstname:Salim Lastname:Saleh Birthdate:2000-01-01
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:12
+
+5 Person No:40 Firstname:Salim Lastname:Saleh Birthdate:2000-01-01
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:12
+
+6 Person No:60 Firstname:Benhur Lastname:Ivo Birthdate:2819-01-01
+Healthprofile: Height:12.0 Weight:12.0 Bloodpressure:null
+
+7 Person No:63 Firstname:Chic Lastname:pretty Birthdate:2000-01-01
+Healthprofile: Height:null Weight:null Bloodpressure:12
+
+8 Person No:66 Firstname:ivo Lastname:ivan Birthdate:2000-01-01
+Healthprofile: Height:12 Weight:12 Bloodpressure:12
+
+9 Person No:69 Firstname:Mercy Lastname:Lovely Birthdate:2000-01-01
+Healthprofile: Height:60 Weight:60 Bloodpressure:12
+
+10 Person No:165 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:null Weight:null Bloodpressure:null
+
+11 Person No:167 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:null Weight:null Bloodpressure:null
+
+12 Person No:169 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:null Weight:null Bloodpressure:null
+
+13 Person No:201 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:98 Weight:98 Bloodpressure:null
+
+
+************************************************************
+
+Method #5: deletePerson(Long id)
+Parameters: id of person to delete
+Description: Deletes the newly created person
+************** New count is 12 after deleting *************
+
+------ List of people in our database after deleting------
+1 Person No:1 Firstname:Pavel Lastname:Pallino Birthdate:Tue Dec 08 00:48:23 EAT 2015
+Healthprofile: Height:22.0 Weight:22.0 Bloodpressure:null
+
+2 Person No:28 Firstname:Pavel Lastname:Pallino Birthdate:Mon Dec 07 18:18:12 EAT 2015
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:22.0
+
+3 Person No:32 Firstname:Salim Lastname:Saleh Birthdate:2000-01-01
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:12
+
+4 Person No:36 Firstname:Salim Lastname:Saleh Birthdate:2000-01-01
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:12
+
+5 Person No:40 Firstname:Salim Lastname:Saleh Birthdate:2000-01-01
+Healthprofile: Height:20.9 Weight:20.9 Bloodpressure:12
+
+6 Person No:60 Firstname:Benhur Lastname:Ivo Birthdate:2819-01-01
+Healthprofile: Height:12.0 Weight:12.0 Bloodpressure:null
+
+7 Person No:63 Firstname:Chic Lastname:pretty Birthdate:2000-01-01
+Healthprofile: Height:null Weight:null Bloodpressure:12
+
+8 Person No:66 Firstname:ivo Lastname:ivan Birthdate:2000-01-01
+Healthprofile: Height:12 Weight:12 Bloodpressure:12
+
+9 Person No:69 Firstname:Mercy Lastname:Lovely Birthdate:2000-01-01
+Healthprofile: Height:60 Weight:60 Bloodpressure:12
+
+10 Person No:165 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:null Weight:null Bloodpressure:null
+
+11 Person No:167 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:null Weight:null Bloodpressure:null
+
+12 Person No:169 Firstname:Yoweri Lastname:Museveni Birthdate:18/03/1960
+Healthprofile: Height:null Weight:null Bloodpressure:null
+
+
+************************************************************
+
+Method #6: readPersonHistory(Long id, String measureType)
+Parameters: id of person and measuretype string eg 'height';
+ NB: the measuretype should be in our database
+Description: Reads height history of last person and saves id of last height measure
+
+Height History of first person
+id:3 value:172.0 Datechanged:2015-11-15
+id:44 value:17.0 Datechanged:2015-11-16
+id:45 value:19 Datechanged:2015-11-16
+id:84 value:30 Datechanged:2015-12-07
+id:89 value:30 Datechanged:2015-12-07
+id:94 value:30 Datechanged:2015-12-07
+id:99 value:30 Datechanged:2015-12-07
+id:104 value:30 Datechanged:2015-12-07
+id:109 value:30 Datechanged:2015-12-07
+id:114 value:30 Datechanged:2015-12-07
+id:119 value:30 Datechanged:2015-12-07
+id:124 value:30 Datechanged:2015-12-07
+id:129 value:30 Datechanged:2015-12-07
+id:134 value:30 Datechanged:2015-12-07
+id:139 value:30 Datechanged:2015-12-07
+id:144 value:30 Datechanged:2015-12-07
+id:149 value:30 Datechanged:2015-12-07
+id:154 value:30 Datechanged:2015-12-08
+id:159 value:30 Datechanged:2015-12-08
+id:164 value:30 Datechanged:2015-12-08
+id:186 value:30 Datechanged:2015-12-08
+id:196 value:30 Datechanged:2015-12-08
+id:200 value:30 Datechanged:2015-12-08
+
+************************************************************
+
+Method #7: readMeasureTypes()
+Parameters: None
+Description: Reads the Measuretypes in our database
+Measure Types are: 
+
+height
+weight
+bloodpressure
+
+************************************************************
+
+Method #8: readPersonMeasure(Long id, String measure, Long mid)
+Parameters: id of person, measuretype string eg 'weight' and id of measuretype in database
+Description: Prints the height of the first person with the measure id we saved in step 6 above
+id:200 value:30 Datechanged:2015-12-08
+
+************************************************************
+
+Method #9: savePersonMeasure(Long id,String measuretype, Measure m)
+Parameters: id of person,measuretype string, object of measuretype with the value
+Description: Saves a new height of 20 for the first person, we keep the new measure id
+id:204 value:20 Datechanged:2015-12-08
+
+************************************************************
+
+Method #10: updatePersonMeasure(Long id, Measure m, measure_object, measure_id)
+Parameters: id of person,measuretype string, object of measuretype with the value and the measure id
+Description: Updates the newly created height to 30 using its measure id saved in method 9
+id:204 value:30 Datechanged:2015-12-08
+
+************************************************************
+
+BUILD SUCCESSFUL (total time: 17 seconds)
