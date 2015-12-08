@@ -1,4 +1,5 @@
 # introsde-2015-assignment-03-client
+Name: Kayongo Ivan
 
 Heroku wsdl is: https://whispering-shelf-2052.herokuapp.com/ws/people?wsdl
 
